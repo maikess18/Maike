@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+    .photo-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    .photo-card img {
+      width: 100%;
+      height: auto;
+    }
+    .photo-card p {
+      margin: 10px 0 5px;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Photo Store</h1>
+  </header>
+  <div class="gallery">
+    <div class="photo-card">
+      <img src="images/1.jpg" alt="Photo 1">
+      <p>Photo 1</p>
+      <a class="download-btn" href="images/1.jpg" download>تحميل</a>
+    </div>
+    <div class="photo-card">
+      <img src="images/2.jpg" alt="Photo 2">
+      <p>Photo 2</p>
+      <a class="download-btn" href="images/2.jpg" download>تحميل</a>
+    </div>
+    <div class="photo-card">
+      <img src="images/3.jpg" alt="Photo 3">
+      <p>Photo 3</p>
+      <a class="download-btn" href="images/3.jpg" download>تحميل</a>
+    </div>
+    <!-- أضف المزيد من الصور حسب الحاجة -->
+  </div>
+</body>
+</html>
